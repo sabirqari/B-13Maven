@@ -21,7 +21,7 @@ public class LoginStep {
 
 	@Given("Admin User navigates to NTK Login page {string}")
 	public void navigateToNTK(String url) throws InterruptedException {
-		Hooks.setUp("edge");
+		Hooks.setUp("safari");
 		Hooks.driver.get(url);
 
 		loginObj = new LoginPage(Hooks.driver);
